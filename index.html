@@ -80,10 +80,10 @@
    <script>
       // Plus button increment Handler
       document.getElementById("case-increase").addEventListener("click",function(){
-         const caseInput = document.getElementById("case-input");
-         const caseCount = parseInt(caseInput.value);
+         var caseInput = document.getElementById("case-input").value;
+         const caseCount = parseInt(caseInput);
          const newCaseCount = caseCount + 1;
-         caseInput.value = newCaseCount;
+         caseInput = newCaseCount;
       })
    </script>
 </body>
